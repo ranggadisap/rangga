@@ -1,0 +1,81 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<center>
+<div class="w3-container">
+    <img src="atas.png">
+</div>
+</center>
+
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="Helm('Identitas')">Identitas</button>
+ <button class="w3-bar-item w3-button" onclick="Helm('Shoei')">Shoei</button>
+ <button class="w3-bar-item w3-button" onclick="Helm('Arai')">Arai</button>
+ <button class="w3-bar-item w3-button" onclick="Helm('Agv')">Agv</button>
+ <button class="w3-bar-item w3-button" onclick="Helm('KYT')">KYT</button>
+</div>
+
+<div id="" class="w3-container Helm w3-animate-zoom">
+    <center>
+    <h1>SELAMAT DATANG</h1>
+    <hr>
+    <h2>Macam Macam Helm <br>
+    10121026 - Rangga Adisaputra</h2>
+   </div>
+
+<center>
+<div id="Identitas" class="w3-container Helm w3-animate-fading" style="display:none">
+ <h2>Identitas</h2>
+ <img src="rangga.JPG" width="300">
+ <p>Rangga Adisaputra</p>
+ <p>10121026</p>
+ <p>IF-1</p>
+</div>
+</center>
+
+<center>
+<div id="Shoei" class="w3-container Helm w3-animate-fading" style="display:none">
+ <h2>Shoei</h2>
+ <img src="shoei.png" width="300">
+ <p>Helm Shoei</p>
+</div>
+</center>
+
+<center>
+<div id="Arai" class="w3-container Helm w3-animate-bottom" style="display:none">
+ <h2>Arai</h2>
+ <img src="arai.png" width="300">
+ <p>Helm Arai</p>
+</div>
+</center>
+
+<center>
+<div id="Agv" class="w3-container Helm w3-animate-top" style="display:none">
+ <h2>Agv</h2>
+ <img src="agv.png" width="300">
+ <p>Helm Agv</p>
+</div>
+</center>
+
+<center>
+<div id="KYT" class="w3-container Helm w3-animate-zoom" style="display:none">
+ <h2>KYT</h2>
+ <img src="kyt.png" width="300">
+ <p>Helm KYT</p>
+</div>
+</center>
+
+<script>
+function Helm(namaHelm) {
+ var i;
+ var x = document.getElementsByClassName("Helm");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaHelm).style.display = "block";
+}
+</script>
+</body>
+</html>
